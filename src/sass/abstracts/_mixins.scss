@@ -1,0 +1,30 @@
+@mixin set-flex(
+  $flex-direction: row,
+  $justify-content: space-between,
+  $align-items: center
+) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+@mixin mediaWidth($screenWidth) {
+  @if ($screenWidth==large) {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  }
+
+  @if ($screenWidth==medium) {
+    @media (max-width: 700px) {
+      @content;
+    }
+  }
+  @if ($screenWidth==small) {
+    @media (max-width: 600px) {
+      @content;
+    }
+  }
+}
+

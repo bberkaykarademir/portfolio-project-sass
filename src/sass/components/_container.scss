@@ -1,0 +1,11 @@
+@use "../abstracts" as *;
+.container {
+  height: 100%;
+  width: 80%;
+  @include set-flex;
+  margin: auto;
+  @include mediaWidth(small) {
+    @include set-flex($flex-direction: column, $justify-content: center);
+    width: 100%;
+  }
+}

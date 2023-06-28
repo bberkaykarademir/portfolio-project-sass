@@ -1,0 +1,19 @@
+@use "../abstracts" as *;
+.message {
+  width: 100%;
+  height: 150px;
+  padding: 11px;
+  font-size: 1.1em;
+  background-color: transparent;
+  color: rgba($text-color, 0.75);
+  border: 1px solid $vibrant-color;
+  border-radius: 33px;
+  outline: none;
+  display: block;
+  resize: none;
+  &::placeholder {
+    font-family: $primary-font;
+    color: $vibrant-color;
+    font-size: 0.9em;
+  }
+}

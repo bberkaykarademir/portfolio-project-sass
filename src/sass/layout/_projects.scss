@@ -1,0 +1,18 @@
+@use "../abstracts" as *;
+.projects {
+  @include set-flex($flex-direction: column);
+  &__title {
+    font-family: "Source Code Pro", monospace;
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+  &__container {
+    width: 600px;
+    @include mediaWidth(medium) {
+      width: 80%;
+    }
+    @include mediaWidth(small) {
+      gap: 15px;
+    }
+  }
+}

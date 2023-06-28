@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container nav__container">
+        <div class="nav__logo">
+          <a href="#" class="nav__logo-link"
+            ><h2 class="nav__logo-title">Berkay</h2></a
+          >
+        </div>
+        <ul class="nav__menu">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#projects" class="nav__link">Projects</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="hero" id="home">
+      <section class="hero__left">
+        <div class="hero__image"><img src="" alt="" /></div>
+      </section>
+      <section class="hero__right">
+        <h1 class="hero__title">
+          Hi, I'm Berkay Karademir
+          <span class="hero__job">FrontEnd Developer</span>
+        </h1>
+        <p class="hero__description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
+          illum excepturi! Placeat, facere possimus blanditiis minima
+          laboriosam, totam perspiciatis repudiandae, earum adipisci quisquam
+          excepturi obcaecati iusto ab quas quos impedit reiciendis sit maxime!
+        </p>
+        <a
+          href="./download/Berkay+Karademir+CV.pdf"
+          download="cv.pdf"
+          class="hero__button"
+          ><span class="hero__button-text">Download CV</span>
+          <span class="hero__button-icon"><i class="fas fa-download"></i></span
+        ></a>
+      </section>
+      <div id="projects"></div>
+    </div>
+    <div class="projects">
+      <h3 class="projects__title"></h3>
+      <div class="container projects__container">
+        <a
+          href="https://shopping-app-neon-seven.vercel.app/"
+          class="project"
+          target="_blank"
+        >
+          <div class="project__cover"></div>
+          <div
+            class="project__content"
+            style="background-image: url(./imgs/shopping-app.png)"
+          ></div>
+          <div class="project__cover"></div>
+        </a>
+
+        <a
+          href="https://tesla-clone-react-redux-firebase.vercel.app/"
+          class="project"
+          target="_blank"
+        >
+          <div class="project__cover"></div>
+          <div
+            class="project__content"
+            style="background-image: url(./imgs/tesla.png)"
+          ></div>
+          <div class="project__cover"></div>
+        </a>
+      </div>
+    </div>
+    <div class="contact" id="contact">
+      <div class="container contact__container">
+        <section class="contact__links-section">
+          <h3 class="contact__links-title">Contact Me</h3>
+          <div class="container contact__links-container">
+            <a
+              href="https://github.com/bberkaykarademir"
+              target="_blank"
+              class="link contact__link"
+              ><i class="fa-brands fa-github link__icon"></i></a
+            ><a
+              href="https://www.linkedin.com/in/berkay-karademir-01720a190/"
+              target="_blank"
+              class="link contact__link"
+              ><i class="fa-brands fa-linkedin-in link__icon"></i
+            ></a>
+            <a
+              href="https://medium.com/@bberkaykarademir"
+              target="_blank"
+              class="link contact__link"
+              ><i class="fa-brands fa-medium link__icon"></i
+            ></a>
+          </div>
+        </section>
+        <section class="contact__email-section">
+          <h3 class="contact__email-title">Email Me</h3>
+          <div class="container contact__email-container">
+            <form
+              action="https://formspree.io/f/mleyrnkq"
+              method="POST"
+              class="form contact__form"
+            >
+              <input
+                type="text"
+                name="name"
+                placeholder="NAME"
+                class="input contact__input"
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="EMAIL"
+                class="input contact__input"
+              />
+              <textarea
+                name="message"
+                placeholder="MESSAGE"
+                class="message contact__message"
+              ></textarea>
+              <button type="submit" class="button contact__button">Send</button>
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

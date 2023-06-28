@@ -1,0 +1,21 @@
+@use "../abstracts" as *;
+.project {
+  width: 200px;
+  border: 5px solid $vibrant-color;
+  border-radius: 3px;
+  &__cover {
+    height: 20px;
+    background: $vibrant-color;
+    border-bottom: 3px solid $vibrant-color;
+  }
+  &__content {
+    height: 200px;
+    background-size: cover;
+    transition: 2s all;
+  }
+  &:hover .project__content {
+    background-position: bottom;
+  }
+}
+
+

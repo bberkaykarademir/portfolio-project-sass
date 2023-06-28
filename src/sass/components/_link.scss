@@ -1,0 +1,16 @@
+@use "../abstracts" as *;
+.link {
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border: 1px solid $vibrant-color;
+  color: $text-color;
+  @include set-flex($justify-content: center);
+  border-radius: 50%;
+  transition: all 0.5s ease;
+  font-size: 1.5em;
+  &:hover {
+    background-color: $text-color;
+    color: $primary-color;
+  }
+}

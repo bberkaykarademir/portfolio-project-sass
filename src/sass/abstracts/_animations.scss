@@ -1,0 +1,76 @@
+@use "./variables" as *;
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes show-items {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes show-left {
+  from {
+    transform: translateX(-180px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes show-right {
+  from {
+    transform: translateX(180px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes roll-left {
+  0% {
+    transform: translateY(-50%) rotate(360deg);
+    left: 150px;
+    background-color: $vibrant-color;
+  }
+  100% {
+    transform: translateY(-50%) rotate(0deg);
+    left: -2px;
+    background-color: $primary-color;
+  }
+}
+
+@keyframes show-contact {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+    filter: blur(5px);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+
+.projects--animate {
+  animation: show-items 1s ease;
+}
+
+.contact--animate {
+  animation: show-contact 1s ease;
+}

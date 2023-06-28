@@ -1,0 +1,8 @@
+@use "./abstracts" as *;
+@use "./base";
+@use "./components";
+@use "./layout";
+
+body {
+  background-color: $primary-color;
+}

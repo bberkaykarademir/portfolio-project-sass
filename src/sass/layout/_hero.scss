@@ -1,0 +1,84 @@
+@use "../abstracts" as *;
+.hero {
+  min-height: 100vh;
+  @include set-flex($justify-content: inherit);
+  @include mediaWidth(large) {
+    @include set-flex($flex-direction: column, $justify-content: center);
+    margin-bottom: 3rem;
+  }
+  &__left {
+    flex-basis: 50%;
+    padding-left: 6rem;
+    animation: show-left 1s;
+    @include mediaWidth(large) {
+      margin-top: 10rem;
+      padding: 0;
+    }
+    @include mediaWidth(small) {
+      margin-top: 15rem;
+    }
+  }
+  &__right {
+    flex-basis: 50%;
+    animation: show-right 1s;
+    @include mediaWidth(large) {
+      @include set-flex($flex-direction: column, $justify-content: center);
+    }
+  }
+  &__image {
+    width: 500px;
+    height: 700px;
+    background-color: $vibrant-color;
+    border-radius: 33px;
+    @include mediaWidth(medium) {
+      width: 300px;
+      height: 500px;
+    }
+  }
+  &__title {
+    display: flex;
+    flex-direction: column;
+    @include mediaWidth(small) {
+      width: 250px;
+    }
+  }
+  &__job {
+    color: $vibrant-color;
+  }
+  &__description {
+    width: 600px;
+    margin: 19px 0px 33px 0px;
+    @include mediaWidth(medium) {
+      width: 500px;
+    }
+    @include mediaWidth(small) {
+      width: 250px;
+    }
+  }
+  &__button {
+    background-color: transparent;
+    border: 1px solid $vibrant-color;
+    padding: 11px 50px;
+    border-radius: 33px;
+    position: relative;
+    transition: background-color 0.3s ease;
+    &-icon {
+      background-color: $vibrant-color;
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      @include set-flex($justify-content: center);
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 150px;
+    }
+    &:hover &-icon {
+      animation: roll-left 0.5s linear forwards;
+    }
+    &:hover {
+      background-color: $vibrant-color;
+    }
+  }
+}
