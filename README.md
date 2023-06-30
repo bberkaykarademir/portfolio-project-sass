@@ -1,1 +1,1 @@
-portfolio-project-sass-ic81.vercel.app
+https://portfolio-project-sass-ic81.vercel.app/
