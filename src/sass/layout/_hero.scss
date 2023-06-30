@@ -1,6 +1,7 @@
 @use "../abstracts" as *;
 .hero {
   min-height: 100vh;
+  margin-bottom: 6rem;
   @include set-flex($justify-content: inherit);
   @include mediaWidth(large) {
     @include set-flex($flex-direction: column, $justify-content: center);
